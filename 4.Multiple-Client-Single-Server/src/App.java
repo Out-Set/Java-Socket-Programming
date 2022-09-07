@@ -25,6 +25,10 @@ public class App {
             } catch (Exception e) {
                 e.printStackTrace();
                 System.out.println("Connection error");
+            } finally{
+                if(ss2 != null){
+                    ss2.close();
+                }
             }
         }
     }
